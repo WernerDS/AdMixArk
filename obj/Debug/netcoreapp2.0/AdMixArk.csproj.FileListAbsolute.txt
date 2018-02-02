@@ -1,0 +1,10 @@
+/Users/wernergriesel/Projects/AdMixArk/bin/Debug/netcoreapp2.0/AdMixArk.deps.json
+/Users/wernergriesel/Projects/AdMixArk/bin/Debug/netcoreapp2.0/AdMixArk.runtimeconfig.json
+/Users/wernergriesel/Projects/AdMixArk/bin/Debug/netcoreapp2.0/AdMixArk.runtimeconfig.dev.json
+/Users/wernergriesel/Projects/AdMixArk/bin/Debug/netcoreapp2.0/AdMixArk.dll
+/Users/wernergriesel/Projects/AdMixArk/bin/Debug/netcoreapp2.0/AdMixArk.pdb
+/Users/wernergriesel/Projects/AdMixArk/obj/Debug/netcoreapp2.0/AdMixArk.csproj.CoreCompileInputs.cache
+/Users/wernergriesel/Projects/AdMixArk/obj/Debug/netcoreapp2.0/AdMixArk.AssemblyInfoInputs.cache
+/Users/wernergriesel/Projects/AdMixArk/obj/Debug/netcoreapp2.0/AdMixArk.AssemblyInfo.cs
+/Users/wernergriesel/Projects/AdMixArk/obj/Debug/netcoreapp2.0/AdMixArk.dll
+/Users/wernergriesel/Projects/AdMixArk/obj/Debug/netcoreapp2.0/AdMixArk.pdb

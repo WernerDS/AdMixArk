@@ -1,0 +1,132 @@
+// NAVBAR
+#mainNav.navbar {
+	transition: $transition-base; 
+	z-index: 1040;
+	&.bg-transparent {
+		padding-top: 30px;
+	}
+	.navbar-brand {
+		font-weight: 700;
+		img {
+			height: 20px;
+			position: relative;
+			top: -4px;
+		}
+	}
+}
+
+
+.navbar {
+	&.absolute-top {
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    z-index: 1030;
+	}
+	&.navbar-transparent {
+		background-color: transparent !important;
+	}
+	&.bg-transparent {
+		.btn {
+			&:hover,
+			&:active,
+			&:focus {
+				box-shadow: 0 14px 26px -12px rgba($black,.42), 0 4px 23px 0 rgba($black,.12), 0 8px 10px -5px rgba($black,.2) !important;
+			}
+		}
+	}
+	.navbar-brand {
+		span {
+			font-family: $headings-font-family;
+		}
+		#rotate {
+			span {
+				min-width: 100px;
+				display: inline-block;
+			}
+		}
+		img {
+			height: 20px;
+			position: relative;
+			top: -4px;
+			margin-right: 2px;
+		}
+	}
+}
+
+.navbar-dark,
+.navbar-light {
+	@each $color, $value in $theme-colors {
+		&.bg-#{$color} {
+			//box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 12px -5px rgba($value,.46)
+		}
+	}
+}
+
+.navbar-nav {
+	.nav-item {
+		margin: 0 2px;
+		.nav-link {
+			border-radius: $border-radius-sm;
+			text-transform: uppercase;
+			font-size: $font-size-sm;
+			font-weight: 700;
+			transition: $transition-base;
+			font-family: $headings-font-family;
+			&:hover {
+				background: rgba($white, 0.1);
+			}
+			&.active {
+				background: rgba($white, 0.1);
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		width: 100%;
+		margin-top: $spacer;
+		.nav-item {
+			margin: 1px 0;	
+			.nav-link {
+				text-align: center;
+				background: rgba($white, 0.1);
+				line-height: 30px;
+				.svg-inline--fa {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	// Product Menu
+	.product-menu {
+		padding: $spacer/2;
+		margin: 0;
+		width: 220px;
+		@include clearfix();
+		.dropdown-item {
+			width: 50%;
+			float: left;
+			clear: none;
+			padding: 0;
+			border-radius: $border-radius;
+			div {
+				text-align: center;
+				padding: $spacer/2;
+				border-radius: $border-radius;
+				img {
+					display: block;
+					text-align: center;
+					margin: 0 auto 3px;
+					height: 50px;
+				}
+				span {
+					font-family: $headings-font-family;
+				}
+			}
+			&:hover {
+			}
+		}
+	}
+}
+
