@@ -1,17 +1,67 @@
+body {
+	min-height: 100vh;
+    height: 100%;
+}
+
+.wrapper {
+	box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    max-width: 1500px;
+    padding: 2rem (2rem - $spacer);
+    margin: 0px auto;
+    position: relative;
+    min-height: 100%;
+    background: $body-bg;
+    vertical-align: top;
+    &.full {
+		background: white;
+		padding: 0;
+	}
+}
+.wrapper-heading {
+	max-width: 1500px;
+	padding: 120px 0 20px 0;
+	margin: 0 auto;
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+.element {
+	padding-bottom: 3rem;
+	.element-header {
+		border-bottom: 1px solid rgba(0,0,0,0.05);
+	    padding-bottom: 1rem;
+	    margin-bottom: 2rem;
+	    position: relative;
+	    z-index: 1;
+	    &:after {
+		    content: "";
+		    background-color: $primary;
+		    width: 18px;
+		    height: 6px;
+		    border-radius: $border-radius;
+		    display: block;
+		    position: absolute;
+		    bottom: -3px;
+		    left: 0px;
+		}
+	}
+	.element-actions {
+	    float: right;
+	    position: relative;
+	    z-index: 2;
+	    margin-top: -0.2rem;
+	}
+}
+
 .dashboard-body {
     background-size: 100% 100%;
     background-attachment: fixed;
     background-position: center;
-}
-
-.container-fluid {
-	@include media-breakpoint-up(md) {
-		width: 80%;
-		margin-left: 10%;
-	    margin-right: 10%;
-	    position: relative;
-	    display: table;
-    }
 }
 
 .floor-bend {

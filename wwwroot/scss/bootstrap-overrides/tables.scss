@@ -1,10 +1,21 @@
+.full-header {
+  flex: 1 1 auto;
+  padding: $card-spacer-x;
+  h1, h2, h3, h4 {
+	  margin-bottom: 0;
+  }
+}
+
+
 .table {
 	td, th {
 		vertical-align: middle;
 		border-width: 1px !important;
 	}
 	th {
-		
+		text-transform: uppercase;
+		font-size: $font-size-sm;
+		font-family: $headings-font-family;
 	}
 	td {
 		h5, h6 {
@@ -39,5 +50,33 @@
 				font-family: $headings-font-family;
 			}
 		}
+	}
+	
+	&.table-padded {
+	    border-collapse: separate;
+	    border-spacing: 0 5px;
+	    thead {
+		    th {
+			    border: none;
+		    }
+	    }
+	    tbody {
+		    tr {
+			    border-radius: $border-radius;
+			    transition: $transition-base;
+			    &:hover {
+				    box-shadow: $card-shadow;
+				    //transform: translateY(-1px) scale(1.01);
+			    }
+		    }
+		    td {
+			    background-color: #fff;
+			    border: none;
+			    border-right: 1px solid rgba($black, 0.04);
+			    &:last-child {
+				    border: none;
+			    }
+		    }
+	    }
 	}
 }

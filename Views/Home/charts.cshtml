@@ -2,16 +2,1032 @@
     ViewData["Title"] = "Charts";
 }
 
-<section class="section pb-4 pri-sec-gradient">
-	<div class="container text-white">
-		<div class="row">
-			<div class="col">
-				<h1>@ViewData["Title"]</h1>
-			</div>
-		</div>
+<style>
+.myChartDiv {
+	max-width: 600px;
+	max-height: 400px;
+}
+</style>
+
+
+<section id="cards-charts" class="section pt-0">
+	<div class="container-fluid">		
+        <div class="row">
+	        <div class="col-md">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartI"></canvas>
+		                </div>
+		            </div>
+			    </div>
+	        </div>
+	        <div class="col-md">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartII"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartIII"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+        </div>
+        <div class="row">
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartIV"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartV"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartVI"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+        </div>
+        <div class="row">
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartVII"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartVIII"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartIX"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+        </div>
+        <div class="row">
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartX"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartXI"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartXII"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+        </div>
+        <div class="row">
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartXIII"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartXIV"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartXIIV"></canvas>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+        </div>
+        <div class="row">
+	        <div class="col-md-4">
+		        <div class="card header-hover my-4">
+		            <div class="card-full-header bg-success">
+		                <canvas id="chartHeaderI"></canvas>
+		            </div>
+		            <div class="card-body">
+			            <div class="card-actions">
+				            <a href="" class="btn btn-action" data-toggle="tooltip" data-placement="bottom" title="Refresh"><i class="fas fa-sync-alt"></i></a>
+				            <a href="" class="btn btn-action" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+			            </div>
+		                <h4 class="card-title">Daily Sales</h4>
+		                <div>Curved Line Chart - <b>Hover Header</b></div>
+		            </div>
+		            <div class="card-footer">
+                        <i class="fas fa-clock"></i> updated 4 minutes ago
+                    </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-full-header bg-danger">
+		                <canvas id="chartHeaderII"></canvas>
+		            </div>
+		            <div class="card-body">
+		                <h4 class="card-title">Completed Tasks</h4>
+		                <div>Straight Line Chart</div>
+		            </div>
+		            <div class="card-footer">
+                        <i class="fas fa-clock"></i> campaign sent 2 days ago
+                    </div>
+		        </div>
+	        </div>
+	        <div class="col-md-4">
+		        <div class="card my-4">
+		            <div class="card-full-header bg-warning">
+		                <canvas id="chartHeaderIII"></canvas>
+		            </div>
+		            <div class="card-body">
+		                <h4 class="card-title">Website Views</h4>
+		                <div>Bar Chart</div>
+		            </div>
+		            <div class="card-footer">
+                        <i class="fas fa-clock"></i> campaign sent 2 days ago
+                    </div>
+		        </div>
+	        </div>
+        </div>
 	</div>
 </section>
 
 @section Scripts {
+<!-- Main -->
+<script src="~/js/chart.bundle.js"></script>
 
+<script>
+var ctx = document.getElementById("chartI").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      label: 'Red',
+      data: [12, 19, 3, 5, 2, 3, 8],
+      backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+      borderColor: ['rgba(255,99,132,1)'],
+      borderWidth: 1,
+      fill: false
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartII").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      data: [5, 7, 3, 3, 6, 6, 8],
+      label: "Red",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [2, 3, 4, 2, 5, 9, 7],
+      label: "Blue",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    tooltips: {
+      yPadding: 10,
+      xPadding: 10,
+      caretSize: 6,
+      backgroundColor: '#ffffff',
+      titleFontColor: '#868e96',
+      bodyFontColor: '#868e96',
+      borderColor: '#868e96',
+      borderWidth: 1
+    },
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          max: 10
+        }
+      }]
+    }
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartIII").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      data: [5, 7, 3, 3, 6, 6, 8],
+      label: "Red",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [2, 3, 4, 2, 5, 9, 7],
+      label: "Blue",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [8, 1, 8, 0, 3, 6, 4],
+      label: "Yellow",
+      borderColor: "rgba(255, 206, 86, 1)",
+      backgroundColor: "rgba(255, 206, 86, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          max: 10
+        }
+      }]
+    }
+  }
+});
+</script>
+
+<script>
+var ctx = document.getElementById("chartIV").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      label: 'Red',
+      data: [12, 19, 3, 5, 2, 3, 8],
+      backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+      borderColor: ['rgba(255,99,132,1)'],
+      borderWidth: 1,
+      fill: true
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartV").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      data: [5, 7, 3, 3, 6, 6, 8],
+      label: "Red",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      fill: true
+    }, {
+      data: [2, 3, 4, 2, 5, 9, 7],
+      label: "Blue",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      borderWidth: 1,
+      fill: true
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          max: 10
+        }
+      }]
+    }
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartVI").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      data: [5, 7, 3, 3, 6, 6, 8],
+      label: "Red",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      fill: true
+    }, {
+      data: [2, 3, 4, 2, 5, 9, 7],
+      label: "Blue",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      borderWidth: 1,
+      fill: true
+    }, {
+      data: [8, 1, 8, 0, 3, 6, 4],
+      label: "Yellow",
+      borderColor: "rgba(255, 206, 86, 1)",
+      backgroundColor: "rgba(255, 206, 86, 0.2)",
+      borderWidth: 1,
+      fill: true
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          max: 10
+        }
+      }]
+    }
+  }
+});
+</script>
+
+<script>
+var ctx = document.getElementById("chartVII").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      label: 'Calls',
+      data: [12, 19, 3, 5, 2, 3, 8],
+      backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(255, 99, 132, 0.2)', 'rgba(255, 99, 132, 0.2)', 'rgba(255, 99, 132, 0.2)', 'rgba(255, 99, 132, 0.2)', 'rgba(255, 99, 132, 0.2)', 'rgba(255, 99, 132, 0.2)'],
+      borderColor: ['rgba(255,99,132,1)', 'rgba(255,99,132,1)', 'rgba(255,99,132,1)', 'rgba(255,99,132,1)', 'rgba(255,99,132,1)', 'rgba(255,99,132,1)', 'rgba(255,99,132,1)'],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartVIII").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      data: [2, 9, 3, 5, 2, 3, 8],
+      label: "Red",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [4, 7, 5, 3, 4, 9, 4],
+      label: "Blue",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartIX").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      data: [2, 9, 3, 5, 2, 3, 8],
+      label: "Red",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [4, 7, 5, 3, 4, 9, 4],
+      label: "Blue",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [3, 4, 9, 4, 4, 7, 5],
+      label: "Yellow",
+      borderColor: "rgba(255, 206, 86, 1)",
+      backgroundColor: "rgba(255, 206, 86, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+</script>
+
+<script>
+var ctx = document.getElementById("chartX").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    datasets: [{
+      data: [10, 20, 30],
+      backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(98, 109, 212, 0.2)', 'rgba(255, 206, 86, 0.2)'],
+      borderColor: ['rgba(255, 99, 132, 1)', 'rgba(98, 109, 212, 1)', 'rgba(255, 206, 86, 1)'],
+      borderWidth: 1,
+      label: 'Dataset 1'
+    }],
+    labels: ['Red', 'Blue', 'Yellow']
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    responsive: true
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartXI").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      data: [10, 20, 30],
+      backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(98, 109, 212, 0.2)', 'rgba(255, 206, 86, 0.2)'],
+      borderColor: ['rgba(255, 99, 132, 1)', 'rgba(98, 109, 212, 1)', 'rgba(255, 206, 86, 1)'],
+      borderWidth: 1,
+      label: 'Dataset 1'
+    }],
+    labels: ['Red', 'Blue', 'Yellow']
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    responsive: true
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartXII").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      data: [10, 20, 30],
+      backgroundColor: ['rgba(255, 99, 132, 0.8)', 'rgba(98, 109, 212, 0.8)', 'rgba(255, 206, 86, 0.8)'],
+      borderColor: ['rgba(255, 99, 132, 1)', 'rgba(98, 109, 212, 1)', 'rgba(255, 206, 86, 1)'],
+      borderWidth: 1,
+      label: 'Dataset 1'
+    }, {
+      data: [11, 15, 42],
+      backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(98, 109, 212, 0.2)', 'rgba(255, 206, 86, 0.2)'],
+      borderColor: ['rgba(255, 99, 132, 1)', 'rgba(98, 109, 212, 1)', 'rgba(255, 206, 86, 1)'],
+      borderWidth: 1,
+      label: 'Dataset 2'
+    }],
+    labels: ['Red', 'Blue', 'Yellow']
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    responsive: true
+  }
+});
+</script>
+
+<script>
+var ctx = document.getElementById("chartXIII").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["06:00", "10:00", "14:00", "18:00"],
+    datasets: [{
+      label: "Red",
+      type: "line",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      data: [8, 5, 6, 7],
+      fill: false
+    }, {
+      label: "Blue",
+      type: "line",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      data: [3, 1, 7, 8],
+      borderWidth: 1,
+      fill: false
+    }, {
+      label: "Red",
+      type: "bar",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      data: [8, 5, 6, 7],
+      borderWidth: 1
+    }, {
+      label: "Blue",
+      type: "bar",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      data: [3, 1, 7, 8],
+      borderWidth: 1,
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Time of Day'
+    },
+    legend: {
+      display: true
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          max: 10
+        }
+      }]
+    }
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartXIV").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      data: [2, 9, 3, 5, 2, 3, 8],
+      label: "Red",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [4, 7, 5, 3, 4, 9, 4],
+      label: "Blue",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [3, 4, 9, 4, 4, 7, 5],
+      label: "Yellow",
+      borderColor: "rgba(255, 206, 86, 1)",
+      backgroundColor: "rgba(255, 206, 86, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      xAxes: [{
+        stacked: true,
+      }],
+      yAxes: [{
+        stacked: true
+      }]
+    }
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("chartXIIV").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    datasets: [{
+      data: [5, 7, 3, 3, 6, 6, 8],
+      label: "Red",
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [2, 3, 4, 2, 5, 9, 7],
+      label: "Blue",
+      borderColor: "rgba(98, 109, 212, 1)",
+      backgroundColor: "rgba(98, 109, 212, 0.2)",
+      borderDash: [5, 5],
+      borderWidth: 1,
+      fill: false
+    }, {
+      data: [8, 1, 8, 0, 3, 6, 4],
+      label: "Yellow",
+      borderColor: "rgba(255, 206, 86, 1)",
+      backgroundColor: "rgba(255, 206, 86, 0.2)",
+      borderWidth: 1,
+      fill: true
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Main Colours'
+    },
+    legend: {
+	    labels: {
+		    usePointStyle: true
+	    }
+	},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          max: 10
+        }
+      }]
+    }
+  }
+});
+</script>
+
+<script>
+	var ctx = document.getElementById("chartHeaderI").getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'line',
+	    data: {
+	        labels: ["M", "T", "W", "T", "F", "S", "S"],
+	        datasets: [{
+	            data: [6, 9, 3, 5, 2, 3, 8],
+	            backgroundColor: [
+                'rgba(255,255,255, 0.2)'
+				],
+	            borderColor: [
+	                'rgba(255,255,255,1)'
+	            ],
+	            borderWidth: 3,
+	            fill: false
+	        }]
+	    },
+	    options: {
+		    legend: {
+			    display: false
+		    },
+		    title: {
+		      display: false,
+		      text: 'Main Colours'
+		    },
+	        scales: {
+	          xAxes: [{
+		        ticks: {
+	              fontColor: 'rgba(255,255,255, 0.7)'
+	            },
+	            gridLines: {
+	              color: 'rgba(255,255,255, 0.2)',
+	              lineWidth: 1,
+	              zeroLineWidth: 0
+	            }
+	          }],
+	          yAxes: [{
+	            ticks: {
+	              beginAtZero: true,
+	              max: 10,
+	              min: 0,
+	              fontColor: 'rgba(255,255,255, 0.7)'
+	            },
+	            gridLines: {
+	              color: 'rgba(255,255,255, 0.2)',
+	              lineWidth: 0.5,
+	              zeroLineColor: 'rgba(255,255,255, 0.2)'
+	            }
+	          }]
+	        },
+	        responsive: true
+	    }
+	});
+</script>
+<script>
+	var ctx = document.getElementById("chartHeaderII").getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'line',
+	    data: {
+	        labels: ["2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+	        datasets: [{
+	            data: [6, 9, 3, 5, 2, 3, 8],
+	            lineTension: 0,
+	            backgroundColor: [
+                'rgba(255,255,255, 0.2)'
+				],
+	            borderColor: [
+	                'rgba(255,255,255,1)'
+	            ],
+	            borderWidth: 3,
+	            fill: false
+	        }]
+	    },
+	    options: {
+		    legend: {
+			    display: false
+		    },
+		    title: {
+		      display: false,
+		      text: 'Main Colours'
+		    },
+	        scales: {
+	          xAxes: [{
+		        ticks: {
+	              fontColor: 'rgba(255,255,255, 0.7)'
+	            },
+	            gridLines: {
+	              color: 'rgba(255,255,255, 0.2)',
+	              lineWidth: 1,
+	              zeroLineWidth: 0
+	            }
+	          }],
+	          yAxes: [{
+	            ticks: {
+	              beginAtZero: true,
+	              max: 10,
+	              min: 0,
+	              fontColor: 'rgba(255,255,255, 0.7)'
+	            },
+	            gridLines: {
+	              color: 'rgba(255,255,255, 0.2)',
+	              lineWidth: 0.5,
+	              zeroLineColor: 'rgba(255,255,255, 0.2)'
+	            }
+	          }]
+	        },
+	        responsive: true
+	    }
+	});
+</script>
+<script>
+var ctx = document.getElementById("chartHeaderIII").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug"],
+        datasets: [{
+            label: 'Calls',
+            data: [12, 19, 3, 5, 2, 3, 8],
+            backgroundColor: [
+                'rgba(255,255,255, 0.7)',
+                'rgba(255,255,255, 0.7)',
+                'rgba(255,255,255, 0.7)',
+                'rgba(255,255,255, 0.7)',
+                'rgba(255,255,255, 0.7)',
+                'rgba(255,255,255, 0.7)',
+                'rgba(255,255,255, 0.7)'
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+	    legend: {
+		    display: false
+	    },
+	    title: {
+	      display: false,
+	      text: 'Main Colours'
+	    },
+        scales: {
+          xAxes: [{
+	        ticks: {
+              fontColor: 'rgba(255,255,255, 0.7)'
+            },
+            gridLines: {
+              color: 'rgba(255,255,255, 0.2)',
+              lineWidth: 1,
+              zeroLineWidth: 0
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              beginAtZero: true,
+              max: 20,
+              min: 0,
+              fontColor: 'rgba(255,255,255, 0.7)'
+            },
+            gridLines: {
+              color: 'rgba(255,255,255, 0.2)',
+              lineWidth: 0.5,
+              zeroLineColor: 'rgba(255,255,255, 0.2)'
+            }
+          }]
+        },
+        responsive: true
+    }
+});
+</script>
 }

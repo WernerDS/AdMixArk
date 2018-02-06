@@ -20,9 +20,11 @@ html, html a, body {
 @import "bootstrap-overrides/navbars";
 @import "bootstrap-overrides/tables";
 @import "bootstrap-overrides/tabs";
+@import "bootstrap-overrides/typography";
 
 // Vendor Overrides
-@import "vendor-overrides/data-tables"; 
+@import "vendor-overrides/data-tables";
+@import "vendor-overrides/rateYo"; 
 
 // Skin Variables
 @import "skin/variables";
@@ -39,5 +41,6 @@ html, html a, body {
 @import "skin/pageload";
 //@import "skin/pricing";
 @import "skin/sections";
+@import "skin/stats";
 //@import "skin/sidebar";
 //@import "skin/switch"; 

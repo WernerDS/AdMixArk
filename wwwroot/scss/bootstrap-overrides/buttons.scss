@@ -72,6 +72,21 @@ $social-behance: 			#1769ff;
 		min-width: 0;
 	}
 	
+	&.btn-action {
+		width: $btn-height;
+		padding: $input-btn-padding-y;
+		min-width: 0;
+		border-radius: 50%;
+		color: $body-color;
+		outline: none;
+		&:hover,
+		&:focus,
+		&:active {
+			background: $gray-100;
+			outline: none;
+		}
+	}
+	
 	// Social buttons
     &.btn-facebook {
     	@include social-buttons-color($social-facebook);

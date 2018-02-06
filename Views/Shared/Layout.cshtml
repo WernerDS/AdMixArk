@@ -12,6 +12,10 @@
         <title>@ViewData["Title"] - AdMix Stock</title>
     }
 	
+	<!-- Vendor Styles -->
+	<link rel="stylesheet" href="~/lib/animate.css/animate.min.css">
+	<link rel="stylesheet" href="~/lib/rateYo/min/jquery.rateyo.min.css">
+	
 	<!-- Core Styles -->
 	<link rel="stylesheet" href="~/css/admix.css">
     
@@ -22,13 +26,18 @@
 	<script defer src="~/js/fontawesome-all.js"></script>
         
 </head>
-<body>
+<body class="pri-sec-gradient">
 
     @await Html.PartialAsync("Pageload")
 	@await Html.PartialAsync("Navigation")
-	@RenderBody()
-	@await Html.PartialAsync("Footer")
 	
+	@await Html.PartialAsync("PageTitle")
+	<div class="wrapper">
+		@RenderBody()
+	</div>
+	
+	@await Html.PartialAsync("Footer")
+
 	<!-- Core Scripts -->
     <script src="~/js/jquery-3.2.1.min.js"></script>
 	<script src="~/js/popper.min.js"></script>

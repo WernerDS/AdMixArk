@@ -31,6 +31,18 @@ $card-shadow:		    0 6px 10px -4px rgba($black, 0.15);
 	    }
 	}
 	
+	// Header and footer
+	.card-footer,
+	.card-header {
+		border: none;
+	}
+	
+	.card-header {
+		h1, h2, h3, h4 {
+			margin-bottom: 0;
+		}
+	}
+	
 	// Plain Card
 	&.card-plain {
 		background: transparent;
@@ -38,6 +50,47 @@ $card-shadow:		    0 6px 10px -4px rgba($black, 0.15);
 		.card-footer {
 			background: transparent;
 			box-shadow: none;
+		}
+	}
+	
+	// Chart Area
+	&.card-chart {
+		.card-chart-area {
+			position: relative;
+			.chart {
+				
+			    margin: 0px 15px;
+			    border-radius: $border-radius;
+			    padding: 15px;
+			    background-color: $white;
+			    position: relative;
+			    transition: all 300ms cubic-bezier(0.34, 1.61, 0.7, 1);
+			    z-index: 2;
+			}
+			.chart-actions {
+				position: absolute;
+				z-index: 1;
+				bottom: 10px;
+				width: calc(100% - 30px);
+				left: 17px;
+				right: 17px;
+				text-align: center;
+				z-index: 1;
+			}
+		}
+		&:hover {
+			.chart {
+				box-shadow: 0 10px 30px -12px rgba(0,0,0,.42), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+				transform: translate3d(0, -50px, 0);
+			}
+		}
+		&.no-hover {
+			&:hover {
+				.chart {
+					box-shadow: none;
+					transform:none;
+				}
+			}
 		}
 	}
 	
@@ -91,6 +144,7 @@ $card-shadow:		    0 6px 10px -4px rgba($black, 0.15);
 		}
 	}
 	
+	
 	// Card Full Header
 	.card-full-header {
 		box-shadow: 0 10px 30px -12px rgba(0,0,0,.42), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
@@ -100,9 +154,14 @@ $card-shadow:		    0 6px 10px -4px rgba($black, 0.15);
 	    background-color: #999;
 	    position: relative;
 	    color: $white;
+	    transition: all 300ms cubic-bezier(0.34, 1.61, 0.7, 1);
 	    @each $color, $value in $theme-colors {
 			&.bg-#{$color} {
 				box-shadow: 0 10px 30px -12px rgba($value,.42), 0 4px 25px 0 rgba($value,.12), 0 8px 10px -5px rgba($value,.2);
+			}
+			&.bg-white,
+			&.bg-light {
+				box-shadow: $card-shadow;
 			}
 		}
 	    i,

@@ -1,0 +1,66 @@
+.statcard {
+	border-radius: $border-radius;
+	box-shadow: $card-shadow;
+	.statcard-number {
+		margin-top: 0;
+		margin-bottom: 0;
+		.delta-indicator {
+			display: inline-block;
+			padding: .4em;
+			font-size: $font-size-sm;
+			vertical-align: middle;
+			&:after {
+			    content: "";
+			    display: inline-block;
+			    width: 0;
+			    height: 0;
+			    margin-left: 2px;
+			    margin-left: 2px;
+			    vertical-align: middle;
+			    border-right: 4px solid transparent;
+			    border-left: 4px solid transparent;
+			}
+			&.delta-positive {
+				color: $green !important;
+				&:after {
+					border-top: 0;
+					border-bottom: 4px solid;
+				}
+			}
+			&.delta-negative {
+				color: $red !important;
+				&:after {
+					border-bottom: 0;
+					border-top: 4px solid;
+				}
+			}
+		}
+	}
+	.statcard-desc {
+		font-size: 85%;
+		letter-spacing: .15em;
+		text-transform: uppercase;
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.statcard-#{$color} {
+		background-color: $value;
+	}
+}
+.statcard {
+	&-primary, &-secondary, &-success, &-danger, &-info, &-dark {
+	    color: $white;
+	    .delta-indicator,
+	    .delta-negative {
+		    color: $white !important;
+	    }
+    }
+    &-warning, &-light, &-white {
+	    color: $body-color;
+	    .delta-indicator,
+	    .delta-negative {
+		    color: $body-color !important;
+	    }
+    }
+}

@@ -80,7 +80,8 @@ $theme-colors: map-merge((
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "white":      $white
 ), $theme-colors);
 // stylelint-enable
 
@@ -141,7 +142,7 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $gray-100 !default;
+$body-bg:                   #f2f4f8 !default;
 $body-color:                $gray-700 !default;
 
 // Links
@@ -664,7 +665,7 @@ $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       $white !default;
 $card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1.25rem !default;

@@ -57,7 +57,7 @@
 			.svg-inline--fa {
 				float: right;
 				position: relative;
-				top: 4px;
+				top: 2px;
 			}
 		}
 		th.sorting {
@@ -73,6 +73,25 @@
 		th.sorting_asc {
 			&:after {
 				content: "\f0dd";
+			}
+		}
+		
+		td {
+			[contenteditable="true"] {
+				outline: none;
+				display: block;
+				border: $border-width solid transparent;
+				padding: 0 $spacer/2;
+				border-radius: $border-radius;
+				transition: $transition-base;
+				&:hover {
+					border-color: $border-color;
+					cursor: pointer;
+				}
+				&:focus {
+					background: $gray-100;
+					border-color: $primary;
+				}
 			}
 		}
 	}

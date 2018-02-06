@@ -1,0 +1,495 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<section class="">
+	<div class="container-fluid">
+		
+		<div class="row mb-5">
+			<div class="col-md-6">
+				<div class="card hover-card">
+					<div class="card-header">
+						<h4>Incoming call trends</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card hover-card">
+					<div class="card-header">
+						<h4>Incoming call trends</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row mb-5">
+			<div class="col-md-8">
+				<a href="javascript:void(0)" class="card hover-card">
+					<div class="card-header">
+						<h4>Incoming call trends</h4>
+					</div>
+		            <div class="card-body">
+		                <div class="myChartDiv">
+			                <canvas id="chartVI"></canvas>
+		                </div>
+		            </div>
+		        </a>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-header">
+						<h4>Incoming call trends</h4>
+					</div>
+					<table class="table table-sm mb-0">
+						<thead>
+							<tr>
+								<th><sub>Time</sub></th>
+								<th><sub>From</sub></th>
+								<th><sub>To</sub></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>15:43</td>
+								<td>082 555 43 77</td>
+								<td>Thalia Cobb</td>
+							</tr>
+							<tr>
+								<td>14:37</td>
+								<td>082 435 65 34</td>
+								<td>Anabelle Olsen</td>
+							</tr>
+							<tr>
+								<td>13:21</td>
+								<td>082 565 78 56</td>
+								<td>Eddie Randolph</td>
+							</tr>
+							<tr>
+								<td>12:32</td>
+								<td>082 879 78 89</td>
+								<td>Angela Walker</td>
+							</tr>
+							<tr>
+								<td>09:24</td>
+								<td>082 342 32 23</td>
+								<td>Thalia Cobb</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-chart">
+					<div class="card-header">
+						<h4>Call Responses</h4>
+					</div>
+		            <div class="card-chart-area">
+			            <div class="chart">
+		                	<canvas id="chartXII"></canvas>
+			            </div>
+			            <div class="chart-actions">
+				            <a href="" class="btn btn-secondary btn-sm">View call insights</a>
+			            </div>
+		            </div>
+		            <div>
+			            <table class="table table-sm mb-0">
+							<thead>
+								<tr>
+									<th>&nbsp;</th>
+									<th class="text-right"><sub>Previous</sub></th>
+									<th class="text-right"><sub>Current</sub></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Answered</td>
+									<td class="text-right" style="color:rgb(50,178,50)">531</td>
+									<td class="text-right" style="color:rgb(50,178,50)"><b>152</b></td>
+								</tr>
+								<tr>
+									<td>Missed</td>
+									<td class="text-right" style="color:rgb(240,76,118)">643</td>
+									<td class="text-right" style="color:rgb(240,76,118)"><b>432</b></td>
+								</tr>
+								<tr>
+									<td>Busy</td>
+									<td class="text-right" style="color:rgb(200,200,200)">41</td>
+									<td class="text-right" style="color:rgb(200,200,200)"><b>32</b></td>
+								</tr>
+								<tr>
+									<td>Blocked</td>
+									<td class="text-right" style="color:rgb(150,150,150)">4</td>
+									<td class="text-right" style="color:rgb(150,150,150)"><b>3</b></td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td class="text-right">4321</td>
+									<td class="text-right"><b>1243</b></td>
+								</tr>
+							</tbody>
+						</table>
+		            </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-chart">
+					<div class="card-header">
+						<h4>Top 5 Goals</h4>
+					</div>
+		            <div class="card-chart-area">
+			            <div class="chart">
+		                	<canvas id="chartVIII"></canvas>
+			            </div>
+			            <div class="chart-actions">
+				            <a href="" class="btn btn-secondary btn-sm">View goal insights</a>
+			            </div>
+		            </div>
+		            <div>
+			            <table class="table table-sm mb-0">
+							<thead>
+								<tr>
+									<th>&nbsp;</th>
+									<th class="text-right"><sub>Previous</sub></th>
+									<th class="text-right"><sub>Current</sub></th>
+								</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Posts</td>
+								<td class="text-right">531</td>
+								<td class="text-right"><b>152</b></td>
+							</tr>
+							<tr>
+								<td>Adwords</td>
+								<td class="text-right">643</td>
+								<td class="text-right"><b>432</b></td>
+							</tr>
+							<tr>
+								<td>Email Signatures</td>
+								<td class="text-right">41</td>
+								<td class="text-right"><b>32</b></td>
+							</tr>
+							<tr>
+								<td>Website</td>
+								<td class="text-right">141</td>
+								<td class="text-right"><b>342</b></td>
+							</tr>
+							<tr>
+								<td>Business Listings</td>
+								<td class="text-right">4</td>
+								<td class="text-right"><b>3</b></td>
+							</tr>
+							</tbody>
+						</table>
+		            </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-chart no-hover">
+					<div class="card-header">
+						<h4>Call Responses</h4>
+					</div>
+		            <div class="card-chart-area">
+			            <div class="chart">
+		                	<canvas id="chartXI"></canvas>
+			            </div>
+		            </div>
+		            <div>
+			            <table class="table table-sm mb-0">
+							<thead>
+								<tr>
+									<th>&nbsp;</th>
+									<th class="text-right"><sub>Previous</sub></th>
+									<th class="text-right"><sub>Current</sub></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Leads</td>
+									<td class="text-right">643</td>
+									<td class="text-right"><b class="text-success">432</b></td>
+								</tr>
+								<tr>
+									<td>Questions/Followup</td>
+									<td class="text-right">41</td>
+									<td class="text-right"><b class="text-dark">32</b></td>
+								</tr>
+								
+								
+								<tr>
+									<td>Wrong Number</td>
+									<td class="text-right">3</td>
+									<td class="text-right"><b class="text-dark">51</b></td>
+								</tr>
+								<tr>
+									<td>Complaints</td>
+									<td class="text-right">4</td>
+									<td class="text-right"><b class="text-danger">3</b></td>
+								</tr>
+								<tr>
+									<td>Unclassified</td>
+									<td class="text-right">531</td>
+									<td class="text-right">152</td>
+								</tr>
+							</tbody>
+						</table>
+		            </div>
+		        </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+@section Scripts {
+	<!-- Charts -->
+	<script src="~/js/chart.bundle.js"></script>
+	<script>
+		var ctx = document.getElementById("chartVI").getContext('2d');
+		var myChart = new Chart(ctx, {
+		  type: 'line',
+		  data: {
+		    labels: ["21 October", "22 October", "23 October", "24 October", "25 October", "26 October", "27 October","28 October", "29 October", "30 October"],
+		    datasets: [{
+		      data: [0, 1, 1, 0,1, 0, 1, 1,1,0],
+		      label: "Busy Tone",
+		      borderColor: "rgba(200,200,200, 1)",
+		      backgroundColor: "rgba(200,200,200, 0.7)",
+		      borderWidth: 2,
+		      fill: true
+		    }, {
+		      data: [1, 2, 3, 3, 4, 2, 1,2,3,1],
+		      label: "Missed Calls",
+		      borderColor: "rgba(240,76,118, 1)",
+		      backgroundColor: "rgba(240,76,118, 0.7)",
+		      borderWidth: 2,
+		      fill: true
+		    }, {
+		      data: [2, 5, 10, 24,15, 3, 5, 1,7,3],
+		      label: "Blocked Calls",
+		      borderColor: "rgba(150,150,150, 1)",
+		      backgroundColor: "rgba(150,150,150, 0.7)",
+		      borderWidth: 2,
+		      fill: true
+		    }, {
+		      data: [51, 32, 12, 53,35, 40, 25, 31,49,19],
+		      label: "Answered Calls",
+		      borderColor: "rgba(50,178,50, 1)",
+		      backgroundColor: "rgba(50,178,50, 0.7)",
+		      borderWidth: 2,
+		      fill: true
+		    }]
+		  },
+		  options: {
+		    title: {
+		      display: false,
+		      text: 'Incoming call trends'
+		    },
+		    legend: {
+			    labels: {
+				    usePointStyle: true
+			    }
+			},
+		    scales: {
+		      yAxes: [{
+		        ticks: {
+		          beginAtZero: true,
+		          max: 60
+		        }
+		      }]
+		    }
+		  }
+		});
+</script>
+	<script>
+		var ctx = document.getElementById("chartXII").getContext('2d');
+		var myChart = new Chart(ctx, {
+		  type: 'doughnut',
+		  data: {
+		    datasets: [{
+		      data: [6,28,15,90],
+		      backgroundColor: ['rgb(200,200,200)','rgb(240,76,118)','rgb(150,150,150)','rgb(50,178,50)'],
+		      borderWidth: 0,
+		      label: 'Previous Period'
+		    }, {
+		      data: [3,32,10,97],
+		      backgroundColor: ['rgba(200,200,200,0.3)','rgba(240,76,118,0.3)','rgba(150,150,150,0.3)','rgba(50,178,50,0.3)'],
+		      borderWidth: 0,
+		      label: 'Current Period'
+		    }],
+		    labels: ["Busy Tone","Missed Calls","Blocked Calls","Answered Calls"]
+		  },
+		  options: {
+			scales:
+	        {
+	            xAxes: [{
+	                display: false,
+					barPercentage: 1.0
+	            }]
+	            ,yAxes: [{
+	                display: false
+	            }]
+	        },
+        	title: {
+		      display: false,
+		      text: 'Main Colours'
+		    },
+		    legend: {
+			    display: false
+			},
+		    responsive: true,
+		    animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+		  }
+		});
+	</script>
+	<script>
+		var ctx = document.getElementById("chartVIII").getContext('2d');
+		var myChart = new Chart(ctx, {
+		  type: 'bar',
+		  data: {
+		    labels: ["Facebook", "Adwords", "Website", "Email signature", "Business Listings"],
+		    datasets: [{
+		      data: [3,32,10,32,97],
+		      label: "Previous Period",
+		      backgroundColor: [
+                'rgba(176, 0, 250,0.3)',
+                'rgba(195, 33, 191,0.3)',
+                'rgba(215, 67, 132,0.3)',
+                'rgba(235, 100, 73,0.3)',
+                'rgba(255, 134, 15,0.3)'
+
+              ],
+		      borderWidth: 0,
+		      fill: false
+		    }, {
+		      data: [164,89,78,35,21],
+		      label: "Current Period",
+		      backgroundColor: [
+                'rgb(176, 0, 250)',
+                'rgb(195, 33, 191)',
+                'rgb(215, 67, 132)',
+                'rgb(235, 100, 73)',
+                'rgb(255, 134, 15)'
+                
+              ],
+		      borderWidth: 0,
+		      fill: false
+		    }]
+		  },
+			  
+		  options: {
+			    legend: {
+				    display: false
+			    },
+			    title: {
+			      display: false,
+			      text: 'Main Colours'
+			    },
+		        scales: {
+		          xAxes: [{
+			          display: false,
+				        ticks: {
+			              fontColor: 'rgba(0,0,0, 0.7)'
+			            },
+			            gridLines: {
+			              color: 'rgba(0,0,0, 0.2)',
+			              lineWidth: 1,
+			              zeroLineWidth: 0
+			            }
+		          }],
+		          yAxes: [{
+		            ticks: {
+		              beginAtZero: false,
+		              max: 180,
+		              min: 0,
+		              fontColor: 'rgba(0,0,0, 0.7)'
+		            },
+		            gridLines: {
+		              color: 'rgba(0,0,0, 0.2)',
+		              lineWidth: 0.5,
+		              zeroLineColor: 'rgba(0,0,0, 0.2)'
+		            }
+		          }]
+		        },
+		        responsive: true
+		    }
+
+		});
+	</script>
+	<script>
+		var ctx = document.getElementById("chartXI").getContext('2d');
+		var myChart = new Chart(ctx, {
+		  type: 'bar',
+		  data: {
+		    labels: ["Lead","Question","Wrong Number","Complaint"],
+		    datasets: [{
+		      data: [43,170,95,32],
+		      label: "Previous Period",
+		      backgroundColor: [
+                'rgba(75, 220, 75,0.3)',
+                'rgba(100, 100, 100,0.3)',
+                'rgba(150,150,150,0.3)',
+                'rgba(255,75,75,0.3)'
+              ],
+		      borderWidth: 0,
+		      fill: false
+		    }, {
+		      data: [28,153,90,23],
+		      label: "Current Period",
+		      backgroundColor: [
+                'rgb(75, 220, 75)',
+                'rgb(100, 100, 100)',
+                'rgb(150,150,150)',
+                'rgb(255,75,75)'
+              ],
+		      borderWidth: 0,
+		      fill: false
+		    }]
+		  },
+		  
+		  options: {
+			    legend: {
+				    display: false
+			    },
+			    title: {
+			      display: false,
+			      text: 'Main Colours'
+			    },
+		        scales: {
+		          xAxes: [{
+			          display: false,
+				        ticks: {
+			              fontColor: 'rgba(0,0,0, 0.7)'
+			            },
+			            gridLines: {
+			              color: 'rgba(0,0,0, 0.2)',
+			              lineWidth: 1,
+			              zeroLineWidth: 0
+			            }
+		          }],
+		          yAxes: [{
+		            ticks: {
+		              beginAtZero: false,
+		              max: 180,
+		              min: 0,
+		              fontColor: 'rgba(0,0,0, 0.7)'
+		            },
+		            gridLines: {
+		              color: 'rgba(0,0,0, 0.2)',
+		              lineWidth: 0.5,
+		              zeroLineColor: 'rgba(0,0,0, 0.2)'
+		            }
+		          }]
+		        },
+		        responsive: true
+		    }
+		  
+		});
+	</script>
+}

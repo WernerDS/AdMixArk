@@ -100,6 +100,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/bootstrap-overrides\/typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bootstrap-overrides\/typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/bootstrap\/_alert.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1309,6 +1322,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/skin\/stats.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/skin\/stats.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/skin\/switch.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1318,19 +1344,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/skin\/switch.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/skin\/theme.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/skin\/theme.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1357,6 +1370,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/vendor-overrides\/data-tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/vendor-overrides\/rateYo.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/vendor-overrides\/rateYo.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

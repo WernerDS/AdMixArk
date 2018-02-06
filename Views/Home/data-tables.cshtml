@@ -1,579 +1,558 @@
 ﻿@{
     ViewData["Title"] = "Data Tables";
+    Layout = "LayoutTables";
 }
 
-<section class="section pb-4 pri-sec-gradient">
-	<div class="container text-white">
-		<div class="row">
-			<div class="col">
-				<h1>@ViewData["Title"]</h1>
-			</div>
-		</div>
-	</div>
-</section>
 
-<section class="section pt-5">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				
-				<div class="card">
-					<div class="card-body">
-						<h3 class="mb-0">Table Heading</h3>
+<div class="full-header">
+	<h3>Heading</h3>
+</div>
+<table id="data-table" class="table table-sm my-0">
+	<thead class="thead-light">
+        <tr>
+            <th>&nbsp;</th>
+            <th>Time</th>
+            <th>From</th>
+            <th>Goal</th>
+            <th>Forwarded To</th>
+            <th>Duration</th>
+            <th>Intention</th>
+            <th>Rating</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="tr-success">
+            <td align="center"><i class="fas fa-check text-success"></i></td>
+            <td>2018-02-26</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Waylon Dalton</b>
+                </div>
+            </td>
+            <td>Highway campaign</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Waylon Dalton</b></td>
+            <td class="text-right">65</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
 					</div>
-					
-					<table id="data-table" class="table table-sm mb-0 mt-0">
-						<thead class="thead-light">
-                            <tr>
-	                            <th>&nbsp;</th>
-	                            <th>Time</th>
-	                            <th>From</th>
-	                            <th>Goal</th>
-	                            <th>Forwarded To</th>
-	                            <th>Duration</th>
-	                            <th>&nbsp;</th>
-	                            <th>Intention</th>
-	                            <th>&nbsp;</th>
-	                        </tr>
-                        </thead>
-                        <tbody>
-	                        <tr class="tr-success">
-                                <td align="center"><i class="fas fa-check text-success"></i></td>
-                                <td>2018-02-26</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Waylon Dalton</b>
-                                    </div>
-                                </td>
-                                <td>Highway campaign</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Waylon Dalton</b></td>
-                                <td class="text-right">65</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-danger">
-                                <td align="center"><i class="fas fa-times text-danger"></i></td>
-                                <td>2018-04-26</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Justine Henderson</b>
-                                    </div>
-                                </td>
-                                <td>Contact-Us page</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Thalia Cobb</b></td>
-                                <td class="text-right">4</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-success">
-                                <td align="center"><i class="fas fa-check text-success"></i></td>
-                                <td>2018-05-01</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Abdullah Lang</b>
-                                    </div>
-                                </td>
-                                <td>Highway campaign</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
-                                <td class="text-right">56</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-success" data-toggle="dropdown">Lead</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-danger">
-                                <td align="center"><i class="fas fa-times text-danger"></i></td>
-                                <td>2018-09-05</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Marcus Cruz</b>
-                                    </div>
-                                </td>
-                                <td>Contact-Us page</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Thalia Cobb</b></td>
-                                <td class="text-right">87</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-success">
-                                <td align="center"><i class="fas fa-check text-success"></i></td>
-                                <td>2018-10-18</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Thalia Cobb</b>
-                                    </div>
-                                </td>
-                                <td>Highway campaign</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Justine Henderson</b></td>
-                                <td class="text-right">98</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-danger">
-                                <td align="center"><i class="fas fa-times text-danger"></i></td>
-                                <td>2018-03-05</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Mathias Little</b>
-                                    </div>
-                                </td>
-                                <td>Contact-Us page</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Thalia Cobb</b></td>
-                                <td class="text-right">32</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-success">
-                                <td align="center"><i class="fas fa-check text-success"></i></td>
-                                <td>2018-06-07</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Waylon Dalton</b>
-                                    </div>
-                                </td>
-                                <td>Highway campaign</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
-                                <td class="text-right">21</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-danger">
-                                <td align="center"><i class="fas fa-times text-danger"></i></td>
-                                <td>2018-06-18</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Justine Henderson</b>
-                                    </div>
-                                </td>
-                                <td>Contact-Us page</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
-                                <td class="text-right">21</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-success">
-                                <td align="center"><i class="fas fa-check text-success"></i></td>
-                                <td>2018-07-13</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Abdullah Lang</b>
-                                    </div>
-                                </td>
-                                <td>Highway campaign</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
-                                <td class="text-right">12</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-danger">
-                                <td align="center"><i class="fas fa-times text-danger"></i></td>
-                                <td>2018-10-16</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Thalia Cobb</b>
-                                    </div>
-                                </td>
-                                <td>Contact-Us page</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
-                                <td class="text-right">23</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-success">
-                                <td align="center"><i class="fas fa-check text-success"></i></td>
-                                <td>2018-04-11</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Mathias Little</b>
-                                    </div>
-                                </td>
-                                <td>Highway campaign</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Mathias Little</b></td>
-                                <td class="text-right">45</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-success">
-                                <td align="center"><i class="fas fa-times text-danger"></i></td>
-                                <td>2018-04-24</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Eddie Randolph</b>
-                                    </div>
-                                </td>
-                                <td>Contact-Us page</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Eddie Randolph</b></td>
-                                <td class="text-right">45</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-success">
-                                <td align="center"><i class="fas fa-check text-success"></i></td>
-                                <td>2018-06-19</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Angela Walker</b>
-                                    </div>
-                                </td>
-                                <td>Highway campaign</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Eddie Randolph</b></td>
-                                <td class="text-right">58</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-danger">
-                                <td align="center"><i class="fas fa-times text-danger"></i></td>
-                                <td>2018-10-08</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Angela Walker</b>
-                                    </div>
-                                </td>
-                                <td>Contact-Us page</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Eddie Randolph</b></td>
-                                <td class="text-right">2</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-success">
-                                <td align="center"><i class="fas fa-check text-success"></i></td>
-                                <td>2018-10-25</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Angela Walker</b>
-                                    </div>
-                                </td>
-                                <td>Highway campaign</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
-                                <td class="text-right">50</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                            <tr class="tr-danger">
-                                <td align="center"><i class="fas fa-times text-danger"></i></td>
-                                <td>2018-10-25</td>
-                                <td>
-                                    <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
-                                        <b>Angela Walker</b>
-                                    </div>
-                                </td>
-                                <td>Contact-Us page</td>
-                                <td><i class="fas fa-angle-double-right"></i> <b>Thalia Cobb</b></td>
-                                <td class="text-right">39</td>
-                                <td></td>
-                                <td>
-	                                <div class="dropdown">
-										<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                                <td align="right">
-                                    <div class="dropdown">
-										<a href="#" class="btn btn-light btn-circle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
-                                </td>
-                            </tr>
-                        </tbody>
-					</table>
-					
 				</div>
-				
-			</div>
-		</div>
-	</div>
-</section>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="0"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-danger">
+            <td align="center"><i class="fas fa-times text-danger"></i></td>
+            <td>2018-04-26</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Justine Henderson</b>
+                </div>
+            </td>
+            <td>Contact-Us page</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Thalia Cobb</b></td>
+            <td class="text-right">4</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="0"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-success">
+            <td align="center"><i class="fas fa-check text-success"></i></td>
+            <td>2018-05-01</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Abdullah Lang</b>
+                </div>
+            </td>
+            <td>Highway campaign</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
+            <td class="text-right">56</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-success" data-toggle="dropdown">Lead</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="0"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-danger">
+            <td align="center"><i class="fas fa-times text-danger"></i></td>
+            <td>2018-09-05</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Marcus Cruz</b>
+                </div>
+            </td>
+            <td>Contact-Us page</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Thalia Cobb</b></td>
+            <td class="text-right">87</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="0"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-success">
+            <td align="center"><i class="fas fa-check text-success"></i></td>
+            <td>2018-10-18</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Thalia Cobb</b>
+                </div>
+            </td>
+            <td>Highway campaign</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Justine Henderson</b></td>
+            <td class="text-right">98</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="0"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-danger">
+            <td align="center"><i class="fas fa-times text-danger"></i></td>
+            <td>2018-03-05</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Mathias Little</b>
+                </div>
+            </td>
+            <td>Contact-Us page</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Thalia Cobb</b></td>
+            <td class="text-right">32</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="0"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-success">
+            <td align="center"><i class="fas fa-check text-success"></i></td>
+            <td>2018-06-07</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Waylon Dalton</b>
+                </div>
+            </td>
+            <td>Highway campaign</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
+            <td class="text-right">21</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="0"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-danger">
+            <td align="center"><i class="fas fa-times text-danger"></i></td>
+            <td>2018-06-18</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Justine Henderson</b>
+                </div>
+            </td>
+            <td>Contact-Us page</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
+            <td class="text-right">21</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="5"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-success">
+            <td align="center"><i class="fas fa-check text-success"></i></td>
+            <td>2018-07-13</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Abdullah Lang</b>
+                </div>
+            </td>
+            <td>Highway campaign</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
+            <td class="text-right">12</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="2"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-danger">
+            <td align="center"><i class="fas fa-times text-danger"></i></td>
+            <td>2018-10-16</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Thalia Cobb</b>
+                </div>
+            </td>
+            <td>Contact-Us page</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
+            <td class="text-right">23</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="3"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-success">
+            <td align="center"><i class="fas fa-check text-success"></i></td>
+            <td>2018-04-11</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Mathias Little</b>
+                </div>
+            </td>
+            <td>Highway campaign</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Mathias Little</b></td>
+            <td class="text-right">45</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="4"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-danger">
+            <td align="center"><i class="fas fa-times text-danger"></i></td>
+            <td>2018-04-24</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Eddie Randolph</b>
+                </div>
+            </td>
+            <td>Contact-Us page</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Eddie Randolph</b></td>
+            <td class="text-right">45</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="2"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-success">
+            <td align="center"><i class="fas fa-check text-success"></i></td>
+            <td>2018-06-19</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Angela Walker</b>
+                </div>
+            </td>
+            <td>Highway campaign</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Eddie Randolph</b></td>
+            <td class="text-right">58</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-primary" data-toggle="dropdown">Follow Up</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="2"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-danger">
+            <td align="center"><i class="fas fa-times text-danger"></i></td>
+            <td>2018-10-08</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Angela Walker</b>
+                </div>
+            </td>
+            <td>Contact-Us page</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Eddie Randolph</b></td>
+            <td class="text-right">2</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="5"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-success">
+            <td align="center"><i class="fas fa-check text-success"></i></td>
+            <td>2018-10-25</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Angela Walker</b>
+                </div>
+            </td>
+            <td>Highway campaign</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Anabelle Olsen</b></td>
+            <td class="text-right">50</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-success" data-toggle="dropdown">Lead</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="3"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+        <tr class="tr-danger">
+            <td align="center"><i class="fas fa-times text-danger"></i></td>
+            <td>2018-10-25</td>
+            <td>
+                <div data-toggle="tooltip" title="" data-original-title="082 072 2815">
+                    <b contenteditable="true">Angela Walker</b>
+                </div>
+            </td>
+            <td>Contact-Us page</td>
+            <td><i class="fas fa-angle-double-right"></i> <b>Thalia Cobb</b></td>
+            <td class="text-right">39</td>
+            <td>
+                <div class="dropdown">
+					<a href="#" class="badge badge-pill badge-secondary" data-toggle="dropdown">Unclassified</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+            <td><div class="rating" data-rateyo-star-width="20px" data-rating="2"></div></td>
+            <td align="right">
+                <div class="dropdown">
+					<a href="#" class="btn btn-action" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 
 @section Scripts {
 	<!-- Vendors: Data tables -->
@@ -582,18 +561,17 @@
     <script src="~/lib/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="~/lib/jszip/dist/jszip.min.js"></script>
     <script src="~/lib/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    
     <script>
 	    $(document).ready(function () {
 	
 			if($('#data-table')[0]) {
 		
 		        // Add custom buttons
-		        var dataTableButtons =  '<div class="btn-group actions">' + 
-										  '<button type="button" class="btn btn-link" data-table-action="print"><i class="fas fa-print"></i></button>' +
-										  '<button type="button" class="btn btn-link" data-table-action="fullscreen"><i class="fas fa-expand"></i></button>' +
-										  '<div class="btn-group" role="group">' +
-										    '<button id="btnGroupDrop1" type="button" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-download"></i></button>' +
+		        var dataTableButtons =  '<div class="actions">' + 
+										  '<button type="button" class="btn btn-action" data-table-action="print"><i class="fas fa-print"></i></button>' +
+										  '<button type="button" class="btn btn-action mx-1" data-table-action="fullscreen"><i class="fas fa-expand"></i></button>' +
+										  '<div class="d-inline-block" role="group">' +
+										    '<button id="btnGroupDrop1" type="button" class="btn btn-action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-download"></i></button>' +
 										    '<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">' +
 										      '<a class="dropdown-item" href="#" data-table-action="excel">Excel (.xlsx)</a>' +
 										      '<a class="dropdown-item" href="#" data-table-action="csv">CSV (.csv)</a>' +
@@ -641,8 +619,8 @@
 	                    { "bSortable": false },
 	                    { "bSortable": false },
 	                    { "bSortable": true },
-	                    { "bSortable": false },
 	                    { "bSortable": true },
+	                    { "bSortable": false },
 	                    { "bSortable": false }
 	                ]
 		        });
@@ -679,4 +657,22 @@
 		    
 		});
 	</script>
+    
+    <!-- Rating -->
+    <script src="~/lib/rateYo/min/jquery.rateyo.min.js"></script>
+    <script>
+	    $(document).ready(function () {
+		   if($('.rating')[0]) {
+		        $('.rating').each(function () {
+		            var rating = $(this).data('rating');
+		
+		            $(this).rateYo({
+		                rating: rating,
+		                normalFill: 'rgba(0,0,0,0.3)',
+		                ratedFill: '#ffc107'
+		            });
+		        });
+		    } 
+		});
+    </script>
 }

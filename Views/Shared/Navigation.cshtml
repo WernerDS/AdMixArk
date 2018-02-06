@@ -1,5 +1,5 @@
 ﻿<nav class="navbar navbar-expand-lg navbar-dark absolute-top bg-transparent py-4">
-	<div class="container">
+	<div class="container-fluid">
 		<a class="navbar-brand" href="/" alt="Admix"><img src="~/images/logo.svg"> AdMix <span id="rotate"><span>Talk</span><span>Message</span><span>AI Chat</span><span>Stock</span><span>Forms</span></span></a>
 		
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,10 +9,16 @@
 		<div class="collapse navbar-collapse" id="mainNavigation">
 			
 			<ul class="navbar-nav mx-auto">
-				<li class="nav-item"><a class="nav-link" href="/marketing">Marketing</a></li>
-				<li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+				<li class="nav-item"><a class="nav-link" href="/marketing"><i class="fas fa-home"></i> Marketing</a></li>
 				<li class="nav-item dropdown">
-					<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components <i class="fas fa-chevron-down"></i></a>
+					<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-home"></i> Dashboard <i class="fas fa-chevron-down"></i></a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="/dashboard">Dashboard</a>
+						<a class="dropdown-item" href="/talk-dashboard">Talk Dash</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-home"></i> Components <i class="fas fa-chevron-down"></i></a>
 					<div class="dropdown-menu">
 						<a class="dropdown-item" href="/components">Components</a>
 						<a class="dropdown-item" href="/charts">Charts</a>
@@ -20,7 +26,7 @@
 					</div>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar mr-2" src="~/images/avatar.jpg" width="20px">Username <i class="fas fa-chevron-down"></i></a>
+					<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-users"></i> Username <i class="fas fa-chevron-down"></i></a>
 					<div class="dropdown-menu">
 						<a class="dropdown-item" href="javascript:void(0)"><i class="fas fa-user-circle fa-fw"></i> My Profile</a>
 						<a class="dropdown-item" href="javascript:void(0)"><i class="fas fa-credit-card fa-fw"></i> Billing</a>
